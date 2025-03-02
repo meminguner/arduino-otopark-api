@@ -6,4 +6,4 @@ compatibility_flags = ["nodejs_compat"]
 [[d1_databases]]
 binding = "DB"
 database_name = "arduino-otopark-db"
-database_id = "" # Cloudflare'dan aldığınız ID'yi buraya yapıştırın
+database_id = "531145a0-cf14-41bd-a1af-60dfc8b7ce0f"
