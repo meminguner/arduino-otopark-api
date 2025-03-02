@@ -8,10 +8,11 @@ binding = "DB"
 database_name = "arduino-otopark-db"
 database_id = "531145a0-cf14-41bd-a1af-60dfc8b7ce0f"
 
-# Loglama ayarları
-[triggers]
-crons = []
+# Workers Logs ayarları
+[workers_dev]
+enabled = true
 
 [logs]
-workers_dev = true # Worker loglarını etkinleştir
-sampling_rate = 1.0 # Tüm istekleri logla
+enabled = true
+head_sampling_rate = 1.0
+include_invocation_logs = true
