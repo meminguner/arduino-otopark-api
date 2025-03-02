@@ -1,0 +1,9 @@
+name = "arduino-otopark-api"
+main = "server.js"
+compatibility_date = "2024-03-02"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "arduino-otopark-db"
+database_id = "" # Cloudflare'dan aldığınız ID'yi buraya yapıştırın
