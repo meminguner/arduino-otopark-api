@@ -2,11 +2,9 @@ name = "arduino-otopark-api"
 main = "server.js"
 compatibility_date = "2024-03-02"
 compatibility_flags = ["nodejs_compat"]
+workers_dev = true
 
 [[d1_databases]]
 binding = "DB"
 database_name = "arduino-otopark-db"
 database_id = "531145a0-cf14-41bd-a1af-60dfc8b7ce0f"
-
-# Workers ayarları
-workers_dev = true
