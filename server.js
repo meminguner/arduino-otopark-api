@@ -53,11 +53,11 @@ export default {
         ).first();
 
         return new Response(
-          JSON.stringify({ status: result.data }),
+          result.data,
           {
             headers: {
               ...corsHeaders,
-              'Content-Type': 'application/json'
+              'Content-Type': 'text/plain'
             }
           }
         );
