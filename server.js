@@ -1,5 +1,5 @@
 // Varsayılan durum verisi
-const DEFAULT_STATUS = "1,0,0;2,0,0;3,0,0";
+const DEFAULT_STATUS = "1:0:0;2:0:0;3:0:0";
 
 // CORS başlıkları
 const corsHeaders = {
@@ -83,7 +83,7 @@ export default {
           "SELECT data FROM status WHERE id = 1"
         ).first();
 
-        const values = currentData.data.split(';').map(item => item.split(','));
+        const values = currentData.data.split(';').map(item => item.split(':'));
 
         switch (button) {
           case 'kapaliOtopark':
@@ -109,7 +109,7 @@ export default {
             );
         }
 
-        const newData = values.map(v => v.join(',')).join(';');
+        const newData = values.map(v => v.join(':')).join(';');
 
         await env.DB.prepare(
           "UPDATE status SET data = ? WHERE id = 1"
